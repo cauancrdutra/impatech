@@ -1,0 +1,37 @@
+so boraaaa
+
+DÚVIDAS
+    - notação theta?
+    - meu eu tenho que estudar essa apostila
+
+-  entender como funciona certinho e programar cada sort.
+
+runtime error - erro na entrada (nao é erro de sintaxe nem lógica)
+
+o que são pilhas em python?
+
+TEOREMA MESTRE
+     - ver facil a complexidade de algoritmos recursivos
+     - ah tem uns paranaue ai
+
+REDUÇÃO
+    - dado um problema A, encontrar um problema B que seja equivalente a A. Daí vc pode resolver B pra poder resolver A.
+    - mesmo ômega, mesmo o
+    - mesma ideia de reduzir o problema dos polígonos simples para o de rodenação dos ângulos
+
+LEIA A APOSTILA E BRINQUE COM OS CÓDIGOS!!
+
+
+==================================================
+
+SEÇÃO 3: POO
+oloco . . .
+
+corpos(fields)
+    - reais, complexos, polinômios
+
+um EV é formado por um corpo (soma e multiplicação) e vetores (soma).
+
+PRINCIPIO DA ABSTRAÇÃO
+    - n entendi bem o que ele quis dizer. Preciso ler o material (nao sei qual é).
+    

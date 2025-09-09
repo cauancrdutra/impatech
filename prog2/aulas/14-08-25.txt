@@ -1,0 +1,65 @@
+IDEIAS
+como fzr um programa que gere aleatoriamente esses pontos? consigo fazer com que eles fiquem somente dentro de uma área circular dada, pra ser mais uniforme e visual?
+
+=======================================================================
+
+tenho q aprender a usar jupyter notebooks pra essas aulas.
+
+instancias do problema 
+
+formar poligonos simples com n pontos enumerados dados no plano?
+    com as coordenadas e numeros de cada um, retornar em ordem os pontos que vc "liga"
+
+    qual o algoritmo pra isso? 
+
+    [1o algoritmo] teorema: o poligono de menor perimetro dado um numero de pontos eh um poligono simples
+        prova na apostila
+
+        pega uma sequencia aleatoria e ve o perimetro. Vai testando todas as possibilidades de ordem até encontrar o menor perimetro
+    
+    [2o algoritmo] formar um "poligono estrelado" ordenando os pontos angularmente a partir de um segmento de reta que perte de um ponto no centro.
+        como escolher o ponto central? ideia - "centroide"-?
+
+como medir o quão melhor o segundo algoritmo é melhor que o outro? 
+    COMPLEXIDADE COMPUTACIONAL
+    ter em conta tbm em qual instancia vc ta trabalhando
+    colocar o problema em funcao de n
+
+
+aula: seção 2 dos slides das aulas
+    material: capitulo 2 da apostila de geometria computacional do impa
+
+maquina de turing - ver se eh computacionalmente resolvivel
+
+"modelo de arvore binaria polinomial"
+    bolinhas com os ramos e tal 
+    ou é pai ou é folha
+    os pais têm no máximo dois filhos
+    é um tipo especial de grafo
+    tem um polinomio pai e vai dividindo em casos
+        se fosse segundo grau, por exemplo, ia dividindo em casos e as folhas seriam as solucoes
+        "modelo de arvore de decisoes algebricas"
+        tu resolve uma equacao do segundo grau tlg, eh um algoritmo pra isso
+        facil de olhar quantas possibilidades são existentes pro problema 
+    custo relacionado ao quanto vc caminha na arvore - "altura"
+
+    ordenar numeros
+        na arvore vc vai seguindo escolhas...
+
+complexidade de algoritmos
+    so considerar o pior caso
+    custo do menor algoritmo possível pra esse problema, considerando todos os algoritmos
+
+análise assintotica
+    entender oq acontece "a longo prazo"
+    aumentando n, o que acontece? eficiencia continua a mesma?
+    treinar mt
+    revisar o que significa cada coisa - o prof mesmo disse isso
+        tem que digerir bem
+            REVISAR! (se o lembrete não foi chamativo o suficiente)
+
+
+exercicio
+    nao entendi perfeitamente o segundo exercicio - pq a altura da arvore do algoritmo seria 2^p?
+    
+    

@@ -1,0 +1,66 @@
+-  começando com grafos, n caso específico "árvores"
+- arvores - "grafos sem loops" com uma raiz, desenvolvendo uma hierarquia
+	- varios níveis
+- vc pode "formatar" um grafo qualquer - que não tenha ciclos - selecionando uma raiz e transformando numa árvore.
+- várias aplicações, pra resolver vários problemas
+	- estrutura de diretórios num computador
+	- LLMs, dicionários, corretor ortográfico
+- #### características dos nós
+	- um nó pode ou não ter filhos
+		- nó sem filhos = **folha**/**nó interno**
+		- nó com filhos, sem se a raiz = **nó externo**
+	- cada nó só pode ter um nó antecessor
+	- pais dos pais de um nó = **ancestrais**
+	- nós do mesmo pai = **irmãos**
+	- nós podem ter ordem. O primeiro é à esquerda.
+	- altura de um nó: o maior caminho até um folha donde ele é ancestral (de baixo pra cima, pra pensar melhor).
+- #### características das árvores
+	- grau: o grau do nó de maior grau
+	- nível: medida que itera no grau da árvore. O "grau naquele ponto"
+	- largura: número de nós em um nível
+	- tamanho da árvore: número de nós nela
+	- largura *da árvore*: número de folhas
+	- profundidade?
+	- arestas?
+- como representar árvores computacionalmente? Coordenadas? Ineficiente. Listas encadeadas? Talvez.
+- #### travessia em árvores
+	- simplesmente "caminhar na árvore" numa dada ordem
+		- travessia por profundidade e altura
+- #### binary search trees (BSTs)
+	- cada nó tem de 0 a 2 filhos
+	- cada nó a esquerda é menor que o nó pai, e cada nó à direita é maior (oloco)
+	- armazenar e buscar dados fácil
+	- explicando bst pedindo uma sequencia de numeros aleatorios e ir colocando com base da regra do maior e do menor. Bom exercício.
+		- engraçado... as coisas vão se montando sozinhas. Eu tenho uma árvore com algum padrão. No que ela pode ser útil.
+		- logo, uma árvore pode ser definida como uma array? Só não é útil pra fazer buscas nela, mas pode.
+	- a busca nessa árvore é no máximo log(n).
+		- o mais lento é n, pq seria uma árvore com grau igual ao número de nós.
+			- uma array ordenada forma uma árvore de busca com complexidade n.
+	- complexidades
+		- espaço: n em ambos os casos
+		- pesquisar, inserir, deletar: log n melhor caso, n pior caso
+		- montar TODA a árvore: n log n (log n pra inserir, inserindo todos os n alunos)
+	- travessias
+		- em largura (breadth-fisrt traversal)
+			- de nível em nível
+			- usa fila
+		- travessia por profundidade (depth-first traversal) **entender elas bem, como formalmente é o algoritmo**
+			- in-order
+				- começa no ramo mais à esquerda (segue esquerda, esquerda, esquerda)...
+				- olha a raiz desse nó, depois o ramo à direita.
+				- repete tudo: olha o à esquerda, olha a raiz, olha o à direita.
+				- esquerda - raiz - direita
+				- DEIXA TUDO ORDENADO!!!
+					- entender isso 100%
+				- LrR
+				- complexidade: média n log n
+					- tem que construir a árvore e depois fazer pesquisa nos n nós
+			- pre-order
+				- rLR
+				- olha o raiz, olha a esquerda, olha a direita
+			- post-order
+				- LRr
+				- nos três casos, quanto tu vai à esquerda, tu vai o máximo à esquerda. Quando é direita, aparentemente não. [❔]DÚVIDA![❔]
+					- se não tem algum deles, só continuar seguindo os passos
+				- "apagando" as folhas - considerando as que aparecem depois de apagar alguma antes
+					- deve virar um efeito visual legal
