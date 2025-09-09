@@ -9,6 +9,6 @@
 
 - [ ] Entender o básico que foi passado na aula sobre
 	- [ ] entender os slides
-	- [ ] ler o Pense em Python (capítulos 16, 17 e 18) pra isso
+	- [ ] ler o Pense em Python (capítulos 16, 17 e 18) e fazer os exercícios, principalmente, pra isso
 - [ ] entender o código no github Vector2D
 - [ ] entender a aula do dia 4 de setembro, que não fui (filas? pilhas?)
